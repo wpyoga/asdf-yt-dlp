@@ -54,8 +54,6 @@ install_version() {
 
   local release_file="$install_path/bin/$TOOL_NAME"
   (
-    echo "install_path $install_path"
-    echo "release_file $release_file"
     mkdir -p "$install_path/bin"
     download_release "$version" "$release_file"
     chmod +x "$release_file"
