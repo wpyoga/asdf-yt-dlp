@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/ytdl-org/youtube-dl/"
-TOOL_NAME="youtube-dl"
-TOOL_TEST="youtube-dl --version"
+GH_REPO="https://github.com/yt-dlp/yt-dlp/"
+TOOL_NAME="yt-dlp"
+TOOL_TEST="yt-dlp --version"
 
 fail() {
   echo -e "asdf-$TOOL_NAME: $*"
@@ -37,7 +37,7 @@ download_release() {
   version="$1"
   filename="$2"
 
-  url="$GH_REPO/releases/download/${version}/youtube-dl"
+  url="$GH_REPO/releases/download/${version}/yt-dlp"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"

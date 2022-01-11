@@ -1,8 +1,10 @@
 <div align="center">
 
-# asdf-youtube-dl ![Build](https://github.com/nyrst/asdf-youtube-dl/workflows/Build/badge.svg) ![Lint](https://github.com/nyrst/asdf-youtube-dl/workflows/Lint/badge.svg)
+# asdf-yt-dlp ![Build](https://github.com/wpyoga/asdf-yt-dlp/workflows/Build/badge.svg) ![Lint](https://github.com/wpyoga/asdf-yt-dlp/workflows/Lint/badge.svg)
 
-[youtube-dl](https://github.com/ytdl-org/youtube-dl) plugin for the [asdf version manager](https://asdf-vm.com).
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) plugin for the [asdf version manager](https://asdf-vm.com).
+
+This project was forked from Nyrst's [asdf-youtube-dl](https://github.com/nyrst/asdf-youtube-dl). The license has been left unchanged, and the changes in this repository are minimal.
 
 </div>
 
@@ -22,23 +24,23 @@
 Plugin:
 
 ```shell
-asdf plugin add youtube-dl https://github.com/nyrst/asdf-youtube-dl.git
+asdf plugin add yt-dlp https://github.com/wpyoga/asdf-yt-dlp.git
 ```
 
-youtube-dl:
+yt-dlp:
 
 ```shell
 # Show all installable versions
-asdf list-all youtube-dl
+asdf list-all yt-dlp
 
 # Install specific version
-asdf install youtube-dl latest
+asdf install yt-dlp latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global youtube-dl latest
+asdf global yt-dlp latest
 
-# Now youtube-dl commands are available
-youtube-dl --version
+# Now yt-dlp commands are available
+yt-dlp --version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -48,7 +50,7 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/nyrst/asdf-youtube-dl/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/wpyoga/asdf-yt-dlp/graphs/contributors)!
 
 # License
 
